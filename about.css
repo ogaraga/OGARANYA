@@ -89,12 +89,31 @@ body {
   gap: 10px;
   font-size: var(--myfont);
   list-style: none;
+  animation: ul 10s linear infinite;
 }
 @media screen and (max-width: 600px) {
   .main-container .second-div ul {
-    height: 300px;
+    height: auto;
     margin: auto;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@keyframes ul {
+  10% {
+    color: white;
+    transition-delay: 5s;
+  }
+  40% {
+    color: aqua;
+  }
+  70% {
+    color: lightgreen;
+  }
+  100% {
+    color: black;
   }
 }
 .main-container .second-div ul li {
@@ -123,7 +142,12 @@ body {
   line-height: 1.5;
   font-size: var(--myfont);
 }
-.main-container .vision-mission h3, .main-container .vision-mission h4 {
+.main-container .vision-mission h3 {
+  color: aliceblue;
+  font-variant: small-caps;
+}
+.main-container .vision-mission h4 {
+  text-align: center;
   color: aliceblue;
   font-variant: small-caps;
 }
@@ -143,4 +167,14 @@ body {
   background: whitesmoke;
   max-width: 100vw;
   height: 10vh;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  #myfooter {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #myfooter p {
+    margin: auto 20px;
+  }
 }/*# sourceMappingURL=about.css.map */
