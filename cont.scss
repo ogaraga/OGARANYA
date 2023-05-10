@@ -160,11 +160,12 @@ body{
     margin-bottom: 0;
     
 @media screen and (max-width:540px) {
-    width: 95%;
+    width: 100%;
     height: auto;
     overflow: hidden;
     margin-bottom: 0;  
     padding-top: 10px;
+    margin: auto 10px;
 }
 
 }

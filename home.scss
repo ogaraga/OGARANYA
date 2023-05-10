@@ -507,6 +507,11 @@ header{
         background: whitesmoke;
         max-width: 100vw;
         height: 10vh;
+        @media screen and (max-width: 600px) {
+            margin: auto 10px;
+            width: 100%;
+            margin-bottom: 0;
+        }
 
     }
 }
